@@ -46,7 +46,7 @@ class HospitalAssistant(MycroftSkill):
         self.speak_dialog('menu.list')
 
     @intent_file_handler('breakfastRequest.intent')
-    def handle_breakfastrequest(self, message):
+    def handle_breakfastRequest(self, message):
         self.speak_dialog('breakfast')
 
     @intent_file_handler('lunchrequest.intent')
@@ -54,15 +54,15 @@ class HospitalAssistant(MycroftSkill):
         self.speak_dialog('lunch')
 
     @intent_file_handler('DinnerRequest.intent')
-    def handle_dinnerrequest(self, message):
+    def handle_DinnerRequest(self, message):
         self.speak_dialog('dinner')
 
     @intent_file_handler('beverageRequest.intent')
-    def handle_dinnerrequest(self, message):
+    def handle_beverageRequest(self, message):
         self.speak_dialog('beverage')
 
     @intent_file_handler('ChickenSandwich.intent')
-    def handle_chickensandwich(self, message):
+    def handle_ChickenSandwich(self, message):
         # lunchChoice = "Chicken sandwich"
          self.speak_dialog('chicken.lunch')
 
