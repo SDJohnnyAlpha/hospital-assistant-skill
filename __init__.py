@@ -57,7 +57,7 @@ class HospitalAssistant(MycroftSkill):
     def handle_dinnerrequest(self, message):
         self.speak_dialog('dinner')
 
-    @intent_file_handler('beveragerequest.intent')
+    @intent_file_handler('beverageRequest.intent')
     def handle_dinnerrequest(self, message):
         self.speak_dialog('beverage')
 
