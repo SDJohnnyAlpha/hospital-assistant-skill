@@ -72,12 +72,12 @@ class HospitalAssistant(MycroftSkill):
          self.speak_dialog('coffee.beverage')
 
     @intent_file_handler('tea.intent')
-    def handle_coffee(self, message):
+    def handle_tea(self, message):
         # beverageChoice = "Tea"
          self.speak_dialog('tea.beverage')
 
     @intent_file_handler('water.intent')
-    def handle_coffee(self, message):
+    def handle_water(self, message):
        #  beverageChoice = "Water"
          self.speak_dialog('water.beverage')
 
