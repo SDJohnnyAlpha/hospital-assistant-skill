@@ -4,10 +4,10 @@ from mycroft import MycroftSkill, intent_file_handler
 class HospitalAssistant(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-        breakfastChoice = ""
-        lunchChoice = ""
-        dinnerChoice = ""
-        beverageChoice = ""
+      #  breakfastChoice = ""
+      #  lunchChoice = ""
+      #  dinnerChoice = ""
+      #  beverageChoice = ""
 
     @intent_file_handler('assistant.hospital.intent')
     def handle_assistant_hospital(self, message):
@@ -43,7 +43,7 @@ class HospitalAssistant(MycroftSkill):
 
     @intent_file_handler('menu.intent')
     def handle_menu(self, message):
-        self.speak_dialog('breakfast')
+        self.speak_dialog('menu.list')
 
     @intent_file_handler('breakfastRequest.intent')
     def handle_breakfastrequest(self, message):
@@ -63,63 +63,63 @@ class HospitalAssistant(MycroftSkill):
 
     @intent_file_handler('ChickenSandwich.intent')
     def handle_chickensandwich(self, message):
-         lunchChoice = "Chicken sandwich"
-         self.speak_dialog('dinner')
+        # lunchChoice = "Chicken sandwich"
+         self.speak_dialog('chicken.lunch')
 
     @intent_file_handler('coffeeRequest.intent')
     def handle_coffee(self, message):
-         beverageChoice = "Coffee"
-         self.speak_dialog("We will get you a " + beverageChoice)
+        # beverageChoice = "Coffee"
+         self.speak_dialog('coffee.beverage')
 
     @intent_file_handler('tea.intent')
     def handle_coffee(self, message):
-         beverageChoice = "Tea"
-         self.speak_dialog("We will get you a " + beverageChoice)
+        # beverageChoice = "Tea"
+         self.speak_dialog('tea.beverage')
 
     @intent_file_handler('water.intent')
     def handle_coffee(self, message):
-         beverageChoice = "Water"
-         self.speak_dialog("We will get you a " + beverageChoice)
+       #  beverageChoice = "Water"
+         self.speak_dialog('water.beverage')
 
     @intent_file_handler('pasta.intent')
     def handle_pasta(self, message):
-         dinnerChoice = "Pasta"
-         self.speak_dialog("Thanks Dave, here are your choices. Your breakfast is " + breakfast + " Your lunch choice is " + lunch + " Your dinner is " + dinner)
+       #  dinnerChoice = "Pasta"
+         self.speak_dialog('pasta.dinner')
 
     @intent_file_handler('PorkChop.intent')
     def handle_PorkChop(self, message):
-         dinnerChoice = "Pork Chop"
-         self.speak_dialog("Thanks Dave, here are your choices. Your breakfast is " + breakfast + " Your lunch choice is " + lunch + " Your dinner is " + dinner)
+       #  dinnerChoice = "Pork Chop"
+         self.speak_dialog('porkchop.dinner')
 
     @intent_file_handler('ShepherdsPie.intent')
     def handle_ShepherdsPie(self, message):
-         dinnerChoice = "Shepherds Pie"
-         self.speak_dialog("Thanks Dave, here are your choices. Your breakfast is " + breakfast + " Your lunch choice is " + lunch + " Your dinner is " + dinner)
+       #  dinnerChoice = "Shepherds Pie"
+         self.speak_dialog('shepherdspie.dinner')
 
     @intent_file_handler('porridge.intent')
     def handle_porridge(self, message):
-         breakfastChoice = "Porridge"
-         self.speak_dialog('lunch')
+      #   breakfastChoice = "Porridge"
+         self.speak_dialog('porridge.breakfast')
 
     @intent_file_handler('salad.intent')
     def handle_salad(self, message):
-         lunchChoice = "Salad"
-         self.speak_dialog('dinner')
+      #   lunchChoice = "Salad"
+         self.speak_dialog('salad.lunch')
 
     @intent_file_handler('scrambledeggs.intent')
     def handle_scrambledeggs(self, message):
-         lunchChoice = "Scrambled Eggs"
-         self.speak_dialog('lunch')
+       #  lunchChoice = "Scrambled Eggs"
+         self.speak_dialog('scrambledeggs.breakfast')
 
     @intent_file_handler('soup.intent')
     def handle_soup(self, message):
-         lunchChoice = "Soup"
-         self.speak_dialog('dinner')
+      #   lunchChoice = "Soup"
+         self.speak_dialog('soup.lunch')
 
     @intent_file_handler('toast.intent')
     def handle_toast(self, message):
-         breakfastChoice = "Toast"
-         self.speak_dialog('lunch')
+      #   breakfastChoice = "Toast"
+         self.speak_dialog('toast.breakfast')
 
 
 def create_skill():
