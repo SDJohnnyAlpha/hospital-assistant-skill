@@ -76,7 +76,7 @@ class HospitalAssistant(MycroftSkill):
          beverageChoice = "Tea"
          self.speak_dialog("We will get you a " + beverageChoice)
 
-    @intent_file_handler('Water.intent')
+    @intent_file_handler('water.intent')
     def handle_coffee(self, message):
          beverageChoice = "Water"
          self.speak_dialog("We will get you a " + beverageChoice)
@@ -106,12 +106,12 @@ class HospitalAssistant(MycroftSkill):
          lunchChoice = "Salad"
          self.speak_dialog('dinner')
 
-    @intent_file_handler('ScrambledEggs.intent')
+    @intent_file_handler('scrambledeggs.intent')
     def handle_scrambledeggs(self, message):
          lunchChoice = "Scrambled Eggs"
          self.speak_dialog('lunch')
 
-    @intent_file_handler('Soup.intent')
+    @intent_file_handler('soup.intent')
     def handle_soup(self, message):
          lunchChoice = "Soup"
          self.speak_dialog('dinner')
